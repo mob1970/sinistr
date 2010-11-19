@@ -1,4 +1,4 @@
-require "#{File.dirname(__FILE__)}/lib/sinistr.rb"
+require "#{File.dirname(__FILE__)}/sinistr/sinistr.rb"
 #
 # Sinister.
 #
