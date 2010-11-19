@@ -87,8 +87,8 @@ class Sinistr
 	###
 	def self.generate(project_name, parameters)
 		parameters.each do |param|
-		  create_path(project_name + '/' + param.value)	  		if (param.type == 'views' && create?(project_name + '/' + param.value))
-		  create_path(project_name + '/' + param.value) 		if (param.type == 'i18n' && create?(project_name + '/' + param.value))
+		  create_path(project_name + '/' + param.value)	  	   if (param.type == 'views' && create?(project_name + '/' + param.value))
+		  create_path(project_name + '/' + param.value) 	   if (param.type == 'i18n' && create?(project_name + '/' + param.value))
 		  create_path(project_name + '/public/' + param.value) if (param.type == 'css' && create?(project_name + '/public/' + param.value))
 		  create_path(project_name + '/public/' + param.value) if (param.type == 'images' && create?(project_name + '/public/' + param.value))
 		  create_path(project_name + '/public/' + param.value) if (param.type == 'javascript' && create?(project_name + '/public/' + param.value))
@@ -104,7 +104,7 @@ class Sinistr
 		  remove_path(project_name + '/public/' + param.value) 	if (param.type == 'css' && remove?(project_name + '/public/' + param.value))
 		  remove_path(project_name + '/public/' + param.value) 	if (param.type == 'images' && remove?(project_name + '/public/' + param.value))
 		  remove_path(project_name + '/public/' + param.value) 	if (param.type == 'javascript' && remove?(project_name + '/public/' + param.value))
-		  remove_path(project_name + param.value) 				if (param.type == 'views' && remove?(project_name + '/' + param.value))
+		  remove_path(project_name + '/' + param.value) 		if (param.type == 'views' && remove?(project_name + '/' + param.value))
 		end		
 		remove_path(project_name + '/public') 	if (remove?(project_name + '/public'))
 		remove_path(project_name) 				if (remove?(project_name))		
