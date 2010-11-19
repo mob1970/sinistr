@@ -5,5 +5,5 @@ require "#{File.dirname(__FILE__)}/sinistr/sinistr.rb"
 
 
 if __FILE__ == $0
-  Sinistr::do_process(ARGV)
+  Sinistr.do_process(ARGV)
 end

@@ -6,31 +6,31 @@
 #
 #
 #
-class SiniStrParameter
-  
-	attr_reader :type, :value
-	
-	###
-	#
-	###
-	def initialize(str)
-		@type, @value = str.strip().split(':')
-		raise Exception.new("Parameter not valid.") if (!@type)
-		@value = @type if (!@value)		
-	end
-	
-	###
-	#
-	###
-	def to_s()
-	  "Class name : SiniStrParameter | values --> type : '#{@type}', value : '#{@value}'."
-	end
-	
-end
-
 require 'fileutils'
 
-class Sinistr
+module Sinistr
+ 
+	class SiniStrParameter
+	  
+		attr_reader :type, :value
+		
+		###
+		#
+		###
+		def initialize(str)
+			@type, @value = str.strip().split(':')
+			raise Exception.new("Parameter not valid.") if (!@type)
+			@value = @type if (!@value)		
+		end
+		
+		###
+		#
+		###
+		def to_s()
+		  "Class name : SiniStrParameter | values --> type : '#{@type}', value : '#{@value}'."
+		end
+		
+	end
   
 	GENERATE_OPERATION = 'generate'
 	REMOVE_OPERATION   = 'remove'
