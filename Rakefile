@@ -3,8 +3,8 @@ Gem::Specification.new do |gem|
   gem.version = '0.1.0'
   gem.date    = Date.today.to_s
   
-  gem.summary = "Gem for creating/removing sinatra folder structure."
-  gem.description = "Gem for creating/removing sinatra folder structure using command line."
+  gem.summary = "Gem for creating/removing folders in a sinatra project."
+  gem.description = "Gem for creating/removing folders in a sinatra project using command line."
   
   gem.authors  = ['Miquel Oliete']
   gem.email    = 'miquel@miqueloliete.com'
