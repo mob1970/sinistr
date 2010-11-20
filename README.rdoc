@@ -1,0 +1,25 @@
+= Sinistr
+
+Sinistr is a gem for creating/removing directories in a sinatra project using comand line.
+
+Install the gem: 
+
+  gem install sinistr
+
+and run with:
+
+  sinistr project_name action folder(s)
+
+	project_name : This will be the name of the root folder.
+	action 	     : This is the action you want to do. It can be:
+           generate  : Create a directory.
+	   remove    : Remove a directory.
+	folders      : Folders are defined by one or two 'parts' separated by ':'. The first 
+		       one is the type of the folder (which can be css, javascript, i18n, images 
+		       or views) and the second one (if it is set) is the name of the folder (if it's
+		       not defined is set using the value of the first part), for example:
+	   css:stylesheets
+	   images:img
+	   views
+		                                                                                                       
+ 
