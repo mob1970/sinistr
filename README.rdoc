@@ -27,12 +27,12 @@ and run with:
 
 	  sinistr test generate all
 	  test
-		├── i18n
-		├── public
-		│   ├── css
-		│   ├── images
-		│   └── javascript
-		└── views
+	  ├── i18n
+	  ├── public
+	  │   ├── css
+	  │   ├── images
+	  │   └── javascript
+	  └── views
 		
 	  sinistr test generate css views images
 	  test
