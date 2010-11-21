@@ -1,4 +1,4 @@
-= Sinistr
+																																																																= Sinistr
 
 Sinistr is a gem for creating/removing directories in a sinatra project using comand line.
 
@@ -18,6 +18,7 @@ and run with:
 		       one is the type of the folder (which can be css, javascript, i18n, images 
 		       or views) and the second one (if it is set) is the name of the folder (if it's
 		       not defined is set using the value of the first part), for example:
+	   all
 	   css:stylesheets
 	   images:img
 	   views
