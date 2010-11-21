@@ -15,12 +15,36 @@ and run with:
            generate  : Create a directory.
 	   remove    : Remove a directory.
 	folders      : Folders are defined by one or two 'parts' separated by ':'. The first 
-		       one is the type of the folder (which can be css, javascript, i18n, images 
+		       one is the type of the folder (which can be all or css, javascript, i18n, images 
 		       or views) and the second one (if it is set) is the name of the folder (if it's
 		       not defined is set using the value of the first part), for example:
 	   all
 	   css:stylesheets
 	   images:img
 	   views
-		                                                                                                       
+
+	Examples:
+
+	  sinistr test generate all
+	  test
+		├── i18n
+		├── public
+		│   ├── css
+		│   ├── images
+		│   └── javascript
+		└── views
+		
+	  sinistr test generate css views images
+	  test
+	  ├── public
+	  │   ├── css
+	  │   └── images
+	  └── views	  
  
+	  sinistr test generate views css:stylesheets images:img javascript:js
+	  test
+	  ├── public
+	  │   ├── img
+	  │   ├── js
+	  │   └── stylesheets
+	  └── views
