@@ -10,7 +10,7 @@ and run with:
 
   sinistr project_name action folder(s)
 
-	project_name : This will be the name of the root folder.
+	project_name : This will be the name of the root folder (it can be a name or simply '.' if you are inside the folder).
 	action 	     : This is the action you want to do. It can be:
            generate  : Create a directory.
 	   remove    : Remove a directory.

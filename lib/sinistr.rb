@@ -46,8 +46,8 @@ module Sinistr
 		parameters = Array.new()
 
 		# Project name (first parameter)	  
-		project_name = args.shift()	  
-		
+		project_name = args.shift()
+	
 		# Operation (second parameter)
 		operation = args.shift() 
 		if (operation != GENERATE_OPERATION && operation != REMOVE_OPERATION)
